@@ -91,13 +91,13 @@ button:hover {
         height: auto;
     }
 }
-.product-img {
+/* .product-img {
     width: 200px;
     @media screen and (max-width: 768px) {
         width: 80%;
         height: auto;
     }
-}
+} */
 .category {
     display: flex;
     flex-direction: column;
@@ -130,4 +130,15 @@ hr {
     background-color: darkred;
     text-align: left;
     margin: 0 0 8px 0;
+}
+.item {
+    width: 100%;
+    height: auto;
+}
+.item-img {
+   width: 20%;
+    @media screen and (max-width: 768px) {
+        width: 80%;
+        height: auto;
+    }
 }

@@ -1,167 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Shop</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!--Header Menu-->
     <div class="header">
-        <div>
-            <button>
-                <img class="logo" src="https://assets.stickpng.com/images/6102dc563de48b00044eb5b3.png" alt="logo">
-            </button>
+      <div>
+        <button>
+          <img
+            class="logo"
+            src="https://assets.stickpng.com/images/6102dc563de48b00044eb5b3.png"
+            alt="logo"
+          />
+        </button>
+      </div>
+      <div class="menu">
+        <div class="menu nav">
+          <div class="nav-res">
+            <a
+              class="nav"
+              href="http://127.0.0.1:5500/online-shop/online-shop.html"
+              >Home</a
+            >
+            <a class="nav" href="#">Shop</a>
+            <a class="nav" href="#">Blog</a>
+            <a class="nav" href="#">About</a>
+            <a class="nav" href="#">Contact</a>
+          </div>
+          <svg
+            class="hambuger"
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="14"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
         </div>
         <div class="menu">
-            <div class="menu nav">
-            <div class="nav-res">
-            <a class="nav" href="http://127.0.0.1:5500/online-shop/online-shop.html">Home</a>
-            <a class="nav" href="http://127.0.0.1:5500/online-shop/online-shop.html">Shop</a>
-            <a class="nav" href="http://127.0.0.1:5500/online-shop/online-shop.html">Blog</a>
-            <a class="nav" href="http://127.0.0.1:5500/online-shop/online-shop.html">About</a>
-            <a class="nav" href="http://127.0.0.1:5500/online-shop/online-shop.html">Contact</a>
-            </div>
-            <svg class="hambuger"
-                xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-                </svg>
-            </div>
-            <div class="menu">
-                <button>
-                <img class="icon" src="https://assets.stickpng.com/images/585e4ae1cb11b227491c3393.png" alt="search-icon">
-                </button>
-                <button>
-                <img class="icon" src="https://icons.veryicon.com/png/o/miscellaneous/random/shopping-bag-54.png" alt="shopping-bag-icon">
-                </button>
-        
-            </div>
+          <button>
+            <img
+              class="icon"
+              src="https://pnglib.nyc3.cdn.digitaloceanspaces.com/uploads/2020/08/simple-grey-search-icon_5f34a64f04780-698x680.png"
+              alt="search-icon"
+            />
+          </button>
+          <button>
+            <img
+              class="icon"
+              src="https://icons.veryicon.com/png/o/miscellaneous/random/shopping-bag-54.png"
+              alt="shopping-bag-icon"
+            />
+          </button>
         </div>
+      </div>
     </div>
     <!--Header-->
     <div class="container">
-        <h1>Our Features</h1>
-        <hr>
-        <span>Here you can check out our new products with pair price</span>
+      <h1>Our Features</h1>
+      <hr />
+      <span>Here you can check out our new products with pair price</span>
+      <div class="add-items">
+        <input type="text" class="item-name" placeholder="Item Name" />
+        <input type="text" class="price" placeholder="Price" />
+        <input type="url" class="img" placeholder="Image Link" />
+        <button class="add">Add Item</button>
+      </div>
     </div>
+
     <!--Category-->
     <div class="category">
-        <div class="flex-container">
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://www.allbirds.com/cdn/shop/products/Allbirds_WL_RN_SF_PDP_Natural_White_BTY_11d1b73a-a64f-433d-910b-b51c35e012d8_600x600.png?v=1679676249" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://images.squarespace-cdn.com/content/v1/5d24e2755654760001865082/1660070194011-UMOD64JI5TFXOIR9WW1X/unisex-premium-hoodie-khaki-front-62f2a90596a45.png?format=1000w" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://www.allbirds.com/cdn/shop/products/Allbirds_WL_RN_SF_PDP_Natural_White_BTY_11d1b73a-a64f-433d-910b-b51c35e012d8_600x600.png?v=1679676249" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://images.squarespace-cdn.com/content/v1/5d24e2755654760001865082/1660070194011-UMOD64JI5TFXOIR9WW1X/unisex-premium-hoodie-khaki-front-62f2a90596a45.png?format=1000w" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-        </div>
-        <div class="flex-container">
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://www.allbirds.com/cdn/shop/products/Allbirds_WL_RN_SF_PDP_Natural_White_BTY_11d1b73a-a64f-433d-910b-b51c35e012d8_600x600.png?v=1679676249" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://creations.mattel.com/cdn/shop/products/unisex-staple-t-shirt-pink-front-637d2f8987294.png?v=1669148685" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://www.allbirds.com/cdn/shop/products/Allbirds_WL_RN_SF_PDP_Natural_White_BTY_11d1b73a-a64f-433d-910b-b51c35e012d8_600x600.png?v=1679676249" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-            <div class="product">
-                <div class="thumb">
-                <img class="product-img" src="https://creations.mattel.com/cdn/shop/products/unisex-staple-t-shirt-pink-front-637d2f8987294.png?v=1669148685" alt="img1">
-                </div>
-                <div>
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                    <img class="rate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="rate">
-                </div>
-                <span>Sport Boosters</span>
-                <span style="font-weight: 600;">$92</span>
-            </div>
-        </div>
+      <div class="flex-container"></div>
     </div>
-</body>
+  </body>
+  <script src="index.js"></script>
 </html>
